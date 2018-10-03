@@ -21,7 +21,7 @@ session_start();
 		<div class="jumbotron">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="text-center">Registo12321</h2>
+					<h2 class="text-center">Registo</h2>
 					
 					<form action="" method="post" class="text-center form1">
 						<input type="text" name="name" placeholder="Nome" required> <br>
