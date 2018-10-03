@@ -1,0 +1,19 @@
+SELECT -> SELECCIONAR INFORMAÇÃO
+UPDATE -> ACTUALIZAÇÃO INFORMAÇÃO
+INSERT -> INSERIR INFORMAÇÃO
+DELETE -> ELIMINAR INFORMAÇÃO
+
+1. Conectar à base dados
+2. Validar se o email já existe (SELECT)
+3. Se não existir inserir 
+4. 
+
+
+host: 'localhost';
+username: 'root'
+password: ''
+database: 'miguel'
+
+$connection = new mysqli($host, $username, $password, $database);
+
+$query = 'INSERT INTO users (name) VALUES("$nome")

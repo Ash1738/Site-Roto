@@ -1,0 +1,40 @@
+<?php
+	if ($_POST) 
+	{
+		
+		//carregar ficheiro pra validar os campos
+		require_once("utilizador.php");
+		$utilizador = new utilizador();
+	    $resultado = $utilizador->validar($_POST['name'],$_POST['email'],$_POST['password_a'],$_POST['password_b']);
+		
+		if($resultado['status'] == TRUE)
+			$utilizador->InsertUserIntoDatabase($_POST['name'],$_POST['email'],$_POST['password_a']);
+		
+	}
+?>
+<!DOCTYPE html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<form action="" method="post">
+			<label><span style="color:red">*</span>Name</label>
+			<input type="text" name="name"/>
+			<label><span style="color:red">*</span>Email</label>
+			<input type="text" name="email"/>
+			<label><span style="color:red">*</span>Password</label>
+			<input type="password" name="password_a"/>
+			<label><span style="color:red">*</span>Password Repeat</label>
+			<input type="password" name="password_b"/>
+			<button type="submit" name="submit">Submit</button>
+		</form>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
+<?php
+	if (!$_POST) 
+		return;
+
+	print_r($resultado ['msg']);	
+?>

@@ -1,0 +1,6 @@
+2. Quando o utilizador tenta recuperar a senha (na página recovery.php) tem de validar a data do último token
+3. A data do último token não pode ser superior a 2 horas comparativamente à data actual
+4. Não podes recuperar a senha de um utilizador que não está activo
+5. Colocar foto no utilizador no backoffice
+6. Mostrar a foto na grid dos utilizadores quando está logado como administrador
+7. A foto a mostrar deve ter as dimensões 30px sobre 30px

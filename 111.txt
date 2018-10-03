@@ -1,0 +1,12 @@
+1. Entra na página profile
+2. Existe sessão? Sim -> efectua login
+3. Existe sessão? Não -> Verifica se existe cookie
+4. Existe cookie? Não -> não está logado
+5. Existe cookie? Sim -> Verifica a integridade do cookie
+
+
+$hash_unico = '2929wkekwkekwe--id--wkekwke";
+
+setcookie("hash_unico", $hash_unico);
+
+query = "UPDATE users SET cookie = $hash_unico;
