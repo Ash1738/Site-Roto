@@ -91,7 +91,7 @@
 						<form action="" method="post">
 							<input type="text" name="email" placeholder="Email"> <br>
 							<input type="password" name="password_a" placeholder="Senha"> <br>
-							<input type="checkbox" name="remember" checked>Lembrar-me rápido!<br>
+							<input type="checkbox" name="remember" checked>Lembrar-me ainda mais rápido!<br>
 							<button type="submit" class="button btn btn-default">Entrar</button>
 							<a href="recovery.php">Esqueceu a sua senha?</a>
 						</form>
