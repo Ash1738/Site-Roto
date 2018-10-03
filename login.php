@@ -90,7 +90,7 @@
 						<h2>Entra no Twéter Caralho</h2> 
 						<form action="" method="post">
 							<input type="text" name="email" placeholder="Email"> <br>
-					sdaasdasdasddas="password_a" placeholder="Senha"> <br>
+							<input type="password" name="password_a" placeholder="Senha"> <br>
 							<input type="checkbox" name="remember" checked>Lembrar-me ainda mais rápido!<br>
 							<button type="submit" class="button btn btn-default">Entrar</button>
 							<a href="recovery.php">Esqueceu a sua senha?</a>
@@ -100,7 +100,9 @@
 						</div>
 					</div>
 				</div>
-			</dasdasdasdasd
+			</div>
+		</div>
+		<?php 
 			if($_POST)
 				echo '<h2 class="text-center">' . $result['msg'] . '</h2>';
 			
